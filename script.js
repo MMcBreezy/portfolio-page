@@ -1,23 +1,13 @@
-document.addEventListener('mousemove', function(event) {
-    var x = event.clientX;
-    var y = event.clientY;
-    var clusterSize = 100; // Number of pixels in each cluster
+setInterval(function() {
+    var staticPixel = document.createElement('div');
+    staticPixel.classList.add('static-pixel');
+    staticPixel.style.setProperty('--translate-x', Math.random() * window.innerWidth + 'px');
+    staticPixel.style.setProperty('--translate-y', Math.random() * window.innerHeight + 'px');
   
-    for (var i = 0; i < clusterSize; i++) {
-      var staticPixel = document.createElement('div');
-      staticPixel.classList.add('static-pixel');
+    document.body.appendChild(staticPixel);
   
-      // Randomize the pixel position within a larger range
-      var randomX = x + Math.random() * 400 - 200;
-      var randomY = y + Math.random() * 400 - 200;
-      staticPixel.style.top = randomY + 'px';
-      staticPixel.style.left = randomX + 'px';
-  
-      document.body.appendChild(staticPixel);
-  
-      setTimeout(function() {
-        staticPixel.remove();
-      }, 5000);
-    }
-  });
+    setTimeout(function() {
+      staticPixel.remove();
+    }, 10000);
+  }, 200);
   

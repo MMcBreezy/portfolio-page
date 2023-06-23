@@ -15,24 +15,27 @@ body {
     pointer-events: none;
     opacity: 0;
     border-radius: 50%;
-    animation: static-effect 5s linear;
+    animation: static-effect 10s linear infinite;
   }
   
   @keyframes static-effect {
     0% {
-      opacity: 1;
-      transform: scale(0);
+      opacity: 0;
+      transform: scale(0) translate(-50%, -50%);
     }
-    50% {
+    30% {
       opacity: 1;
-      transform: scale(1.5);
+      transform: scale(1) translate(-50%, -50%) translate(
+        calc(-50% + var(--translate-x)),
+        calc(-50% + var(--translate-y))
+      );
     }
     100% {
       opacity: 0;
-      transform: scale(2);
+      transform: scale(0) translate(-50%, -50%);
     }
   }
-  
+
 /* Animation for the header */
 h1 {
   animation: fade-in 1s ease-in-out;
