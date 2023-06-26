@@ -20,7 +20,7 @@ body {
   font-size: var(--base-font-size);
   color: var(--base-color);
   transition: all 0.3s ease;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container {
@@ -29,6 +29,7 @@ body {
 }
 
 header img {
+  margin-top: 2%;
   height: 110px;
   width: 110px;
 }
@@ -127,4 +128,8 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.skills {
+  display: grid;
 }

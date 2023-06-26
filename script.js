@@ -25,7 +25,7 @@ setInterval(function () {
   // Get updated position of the image.
   const rect = profilePic.getBoundingClientRect();
   const adjustmentX = window.innerWidth / 205; // adjust these values as needed
-  const adjustmentY = window.innerHeight / 70; // adjust these values as needed
+  const adjustmentY = window.innerHeight / 40; // adjust these values as needed
   const centerX = rect.left + rect.width / 2 - adjustmentX;
   const centerY = rect.top + rect.height / 2 - adjustmentY;
 
