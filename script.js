@@ -1,44 +1,67 @@
-// const pixelCount = 5; // number of pixels to orbit around the image
-// const radius = 65; // radius of the orbit
-// const speed = 0.02; // speed of the orbit
-// let pixels = [];
-// let angles = Array(pixelCount).fill(0);
+const bioBtn = document.getElementById("bioBtn");
+const projectsBtn = document.getElementById("projectsBtn");
+const contactBtn = document.getElementById("contactBtn");
 
-// // get the image position
-// const profilePic = document.getElementById("profilePic");
+const content = document.getElementById('content');
 
-// // create the pixels
-// for (let i = 0; i < pixelCount; i++) {
-//   let staticPixel = document.createElement("div");
-//   let baseColor = getComputedStyle(document.documentElement).getPropertyValue(
-//     "--base-color"
-//   );
+const bioView = `
+    <p>
+        Hello, my name is "Mike"! I am a lover of
+        technology and learning about new ways to enhance the human
+        experience. When I'm not learning about programming, I can be found
+        spending time with my family, composing and producing music, playing
+        piano or tinkering with electronics. You can checkout my projects
+        here!
+    </p>
+`;
 
-//   staticPixel.classList.add("static-pixel");
-//   staticPixel.style.backgroundColor = baseColor;
-//   document.body.appendChild(staticPixel);
-//   pixels.push(staticPixel);
-// }
+const projectsView = `
+    <div class="project-section">
+        <div class="container">
+            <div class="project word-guessr">Word Guessr</div>
+            <div class="project advisor-ai">Advisor_AI</div>
+            <div class="project braindose">BrainDose</div>
+        </div>
+    </div>
+`;
 
-// // update the image position within the setInterval function
-// setInterval(function () {
-//   // Get updated position of the image.
-//   const rect = profilePic.getBoundingClientRect();
-//   const adjustmentX = window.innerWidth / 205; // adjust these values as needed
-//   const adjustmentY = window.innerHeight / 40; // adjust these values as needed
-//   const centerX = rect.left + rect.width / 2 - adjustmentX;
-//   const centerY = rect.top + rect.height / 2 - adjustmentY;
+const contactView = `
+    <div>
+        <p>Email: michaelmcbride85@gmail.com</p>
+        <p>Phone: 828.817.9493</p>
+    </div>
+`;
 
-//   for (let i = 0; i < pixelCount; i++) {
-//     let angle = angles[i];
-//     let x = centerX + radius * Math.cos(angle * (i + 1));
-//     let y = centerY + radius * Math.sin(angle * (i + 1));
+bioBtn.addEventListener('click', () => {
+    content.innerHTML = bioView;
+});
 
-//     let scale = Math.sin(angle) * 0.2 + 0.3;
-//     let opacity = Math.sin(angle) * 0.1 + 0.2;
+projectsBtn.addEventListener('click', () => {
+    content.innerHTML = projectsView;
+});
 
-//     pixels[i].style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
-//     pixels[i].style.opacity = opacity;
-//     angles[i] += speed;
-//   }
-// }, 20);
+contactBtn.addEventListener('click', () => {
+    content.innerHTML = contactView;
+});
+
+bioBtn.addEventListener('click', () => {
+    content.innerHTML = bioView;
+    bioBtn.classList.add('active');
+    projectsBtn.classList.remove('active');
+    contactBtn.classList.remove('active');
+});
+
+projectsBtn.addEventListener('click', () => {
+    content.innerHTML = projectsView;
+    projectsBtn.classList.add('active');
+    bioBtn.classList.remove('active');
+    contactBtn.classList.remove('active');
+});
+
+contactBtn.addEventListener('click', () => {
+    content.innerHTML = contactView;
+    contactBtn.classList.add('active');
+    bioBtn.classList.remove('active');
+    projectsBtn.classList.remove('active');
+});
+
