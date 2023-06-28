@@ -72,7 +72,7 @@ p {
 
 .active {
   background-color: beige;
-  border-bottom-color: beige;
+  border-bottom: none;
   z-index: 1;
 }
 
