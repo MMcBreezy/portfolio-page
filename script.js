@@ -32,36 +32,20 @@ const contactView = `
     </div>
 `;
 
-bioBtn.addEventListener('click', () => {
-    content.innerHTML = bioView;
-});
+// Refactored function
+const switchView = (btn, view) => {
+  btn.addEventListener('click', () => {
+    content.innerHTML = view;
+    [bioBtn, projectsBtn, contactBtn].forEach(button => button.classList.remove('active'));
+    btn.classList.add('active');
+  });
+};
 
-projectsBtn.addEventListener('click', () => {
-    content.innerHTML = projectsView;
-});
+// Use the refactored function
+switchView(bioBtn, bioView);
+switchView(projectsBtn, projectsView);
+switchView(contactBtn, contactView);
 
-contactBtn.addEventListener('click', () => {
-    content.innerHTML = contactView;
-});
-
-bioBtn.addEventListener('click', () => {
-    content.innerHTML = bioView;
-    bioBtn.classList.add('active');
-    projectsBtn.classList.remove('active');
-    contactBtn.classList.remove('active');
-});
-
-projectsBtn.addEventListener('click', () => {
-    content.innerHTML = projectsView;
-    projectsBtn.classList.add('active');
-    bioBtn.classList.remove('active');
-    contactBtn.classList.remove('active');
-});
-
-contactBtn.addEventListener('click', () => {
-    content.innerHTML = contactView;
-    contactBtn.classList.add('active');
-    bioBtn.classList.remove('active');
-    projectsBtn.classList.remove('active');
-});
-
+window.onload = function() {
+  bioBtn.classList.add('active');
+};
