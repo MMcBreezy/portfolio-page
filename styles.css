@@ -117,7 +117,13 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.8rem; /* Adjust this value as needed to get the desired font size */
+  }
+
+  body,
+  .container {
+    overflow-x: hidden; /* This will prevent horizontal scrolling */
+    overflow-y: hidden; /* This will prevent vertical scrolling */
   }
 
   button {
