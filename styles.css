@@ -24,9 +24,10 @@ body {
 }
 
 .container {
-  width: 80%;
-  max-width: 1200px;
-  padding: 0 1rem;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  max-width: 100%;
 }
 
 .content {
@@ -93,16 +94,14 @@ p {
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
+    padding: 10px;
   }
 }
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .container {
     width: 100%;
-  }
-
-  .content {
-    min-height: 50vh;
+    padding: 10px;
   }
 
   button {
