@@ -101,6 +101,10 @@ p {
     width: 100%;
   }
 
+  .content {
+    min-height: 50vh; /* Adjust as needed */
+  }
+
   button {
     font-size: 1rem;
     padding: 8px 16px;
