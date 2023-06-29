@@ -79,7 +79,6 @@ p {
 
 .active {
   background-color: beige;
-  z-index: 1;
 }
 
 .project-section {
@@ -94,7 +93,6 @@ p {
   display: inline;
 }
 
-/* Responsive layout */
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
@@ -116,6 +114,10 @@ p {
     padding: 8px;
     display: block;
     max-width: fit-content;
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   button {
