@@ -113,7 +113,7 @@ p {
     margin: 2px;
     padding: 8px;
     display: block;
-    max-width: fit-content;
+    max-width: max-content;
   }
 
   p {
