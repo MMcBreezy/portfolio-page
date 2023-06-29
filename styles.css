@@ -25,18 +25,26 @@ body {
 
 .container {
   padding: 20px;
-  max-width: 100%;
+  width: 80%; /* Adjust this percentage as needed */
+  max-width: 1200px; /* This will prevent the container from becoming too wide on large screens */
+  margin: auto;
 }
 
 .content {
   background-color: beige;
-  min-height: 22vh;
+  height: 30vh;
   overflow-y: auto;
   border-width: 2px;
   border-style: solid;
   border-color: var(--base-color);
   padding: 2%;
   z-index: 0;
+  position: relative;
+}
+
+.content > div {
+  position: absolute; /* Add this */
+  width: 100%; /* Add this */
 }
 
 header {
@@ -81,10 +89,8 @@ p {
 }
 
 .project {
-  background-color: aliceblue;
   margin: 2px;
   padding: 8px;
-  border-radius: 4px;
   display: inline;
 }
 
@@ -92,16 +98,28 @@ p {
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
-    padding: 10px;
   }
 }
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .container {
+    flex-direction: column;
     width: 100%;
   }
 
   .content {
+    padding: 2%;
+  }
+
+  .project {
+    margin: 2px;
+    padding: 8px;
+    display: block;
+    max-width: fit-content;
+  }
+
+  p {
+    font-size: 1.5rem;
     padding: 2%;
   }
 

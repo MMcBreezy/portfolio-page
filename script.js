@@ -2,17 +2,19 @@ const bioBtn = document.getElementById("bioBtn");
 const projectsBtn = document.getElementById("projectsBtn");
 const contactBtn = document.getElementById("contactBtn");
 
-const content = document.getElementById('content');
+const content = document.getElementById("content");
 
 const bioView = `
-    <p>
-        Hello, my name is "Mike"! I am a lover of
-        technology and learning about new ways to enhance the human
-        experience. When I'm not learning about programming, I can be found
-        spending time with my family, composing and producing music, playing
-        piano or tinkering with electronics. You can checkout my projects
-        here!
-    </p>
+    <div>   
+        <p>
+            Hello, my name is "Mike"! I am a lover of
+            technology and learning about new ways to enhance the human
+            experience. When I'm not learning about programming, I can be found
+            spending time with my family, composing and producing music, playing
+            piano or tinkering with electronics. You can checkout my projects
+            here!
+        </p>
+    </div>
 `;
 
 const projectsView = `
@@ -34,10 +36,12 @@ const contactView = `
 
 // Refactored function
 const switchView = (btn, view) => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener("click", () => {
     content.innerHTML = view;
-    [bioBtn, projectsBtn, contactBtn].forEach(button => button.classList.remove('active'));
-    btn.classList.add('active');
+    [bioBtn, projectsBtn, contactBtn].forEach((button) =>
+      button.classList.remove("active")
+    );
+    btn.classList.add("active");
   });
 };
 
@@ -46,6 +50,6 @@ switchView(bioBtn, bioView);
 switchView(projectsBtn, projectsView);
 switchView(contactBtn, contactView);
 
-window.onload = function() {
-  bioBtn.classList.add('active');
+window.onload = function () {
+  bioBtn.classList.add("active");
 };
