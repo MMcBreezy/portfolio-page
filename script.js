@@ -34,7 +34,6 @@ const contactView = `
     </div>
 `;
 
-// Refactored function
 const switchView = (btn, view) => {
   btn.addEventListener("click", () => {
     content.innerHTML = view;
@@ -45,7 +44,6 @@ const switchView = (btn, view) => {
   });
 };
 
-// Use the refactored function
 switchView(bioBtn, bioView);
 switchView(projectsBtn, projectsView);
 switchView(contactBtn, contactView);
