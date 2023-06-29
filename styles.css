@@ -113,6 +113,15 @@ p {
     width: 100%;
   }
 
+  .content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
   .content {
     padding: 2%;
   }
@@ -122,6 +131,7 @@ p {
     padding: 8px;
     display: block;
     max-width: max-content;
+    overflow: hidden;
   }
 
   p {
