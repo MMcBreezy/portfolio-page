@@ -13,7 +13,7 @@ body {
   background: linear-gradient(
     to bottom,
     rgb(142, 196, 249),
-    rgb(225, 245, 255)
+    rgb(162, 218, 246)
   );
   position: relative;
   font-family: var(--font-family);
@@ -66,6 +66,7 @@ p {
   margin-left: 6px;
   border-style: solid;
   border-width: 2px;
+  border-radius: 2px;
   border-color: var(--base-color);
   color: var(--base-color);
 }
@@ -96,10 +97,7 @@ p {
   .container {
     width: 100%;
   }
-  
-  .project {
-    flex: 0 1 100%;
-  }
+
 }
 
 .word-guessr {
