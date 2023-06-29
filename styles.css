@@ -97,8 +97,8 @@ p {
     width: 100%;
   }
 
-  .view-buttons {
-    margin-bottom: -4px;
+  .content {
+    margin-top: -2px;
   }
 }
 
