@@ -102,7 +102,7 @@ p {
   }
 
   .content {
-    min-height: 50vh; /* Adjust as needed */
+    min-height: 50vh;
   }
 
   button {
