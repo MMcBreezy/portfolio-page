@@ -32,19 +32,27 @@ body {
 
 .content {
   background-color: beige;
-  height: 30vh;
+  padding: 10%;
+  height: 20vh;
   overflow-y: auto;
   border-width: 2px;
   border-style: solid;
   border-color: var(--base-color);
   padding: 2%;
   z-index: 0;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .content > div {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  text-align: center;
 }
 
 header {
