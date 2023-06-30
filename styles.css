@@ -75,6 +75,10 @@ h1 {
   justify-content: center;
 }
 
+.bio-section {
+  padding: 10px;
+}
+
 p {
   font-size: 1rem;
   text-align: left;
@@ -136,7 +140,11 @@ p {
   }
 
   .content {
-    padding: 5px;
+    padding: 2%;
+  }
+
+  .project-section {
+    overflow: hidden;
   }
 
   .project {
@@ -144,7 +152,6 @@ p {
     padding: 8px;
     display: block;
     max-width: max-content;
-    overflow: hidden;
   }
 
   p {

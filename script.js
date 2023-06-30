@@ -5,7 +5,7 @@ const contactBtn = document.getElementById("contactBtn");
 const content = document.getElementById("content");
 
 const bioView = `
-    <div>   
+    <div class="bio-section">   
         <p>
             Hello, my name is "Mike"! I am a lover of
             technology and learning about new ways to enhance the human
