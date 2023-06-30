@@ -57,6 +57,7 @@ header {
   align-items: center;
   flex-direction: column;
   margin-bottom: 5%;
+  margin-left: 6px;
 }
 
 header img {
@@ -65,6 +66,14 @@ header img {
   border-style: solid;
   border-width: 2px;
   border-radius: 50%;
+}
+
+h1 {
+  font-size: 2rem;
+  animation: fade-in 1s ease-in-out;
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -79,6 +88,8 @@ p {
   border-width: 2px;
   border-color: var(--base-color);
   color: var(--base-color);
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .view-buttons {
@@ -164,12 +175,6 @@ p {
 .braindose {
   background: linear-gradient(rgb(249, 142, 244), rgb(84, 146, 200));
   color: aliceblue;
-}
-
-h1 {
-  font-size: 2rem;
-  animation: fade-in 1s ease-in-out;
-  transition: transform 0.5s ease;
 }
 
 @keyframes fade-in {
