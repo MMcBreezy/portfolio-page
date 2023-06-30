@@ -152,7 +152,6 @@ p {
   body,
   .container {
     overflow-x: hidden;
-    overflow-y: hidden;
   }
 
   .button {
