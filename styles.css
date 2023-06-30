@@ -10,11 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 1% 0;
-  background: linear-gradient(
-    to bottom,
-    rgb(142, 196, 249),
-    rgb(162, 218, 246)
-  );
+  background: linear-gradient(to bottom, rgb(77, 157, 237), rgb(162, 218, 246));
   position: relative;
   font-family: var(--font-family);
   font-size: var(--base-font-size);
@@ -83,6 +79,11 @@ p {
   border-width: 2px;
   border-color: var(--base-color);
   color: var(--base-color);
+}
+
+.view-buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .active {
