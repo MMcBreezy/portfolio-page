@@ -34,7 +34,7 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: var(--base-color);
-  padding: 2%;
+  padding: 1px 14px;
   z-index: 0;
   display: flex;
   justify-content: center;
