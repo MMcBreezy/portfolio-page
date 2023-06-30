@@ -156,6 +156,7 @@ p {
 
   .button {
     font-size: 1rem;
+    padding: 5px auto 5px auto;
     display: flex;
     justify-content: center;
   }
