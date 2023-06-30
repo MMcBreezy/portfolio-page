@@ -132,10 +132,11 @@ p {
     align-items: center;
     width: 100%;
     text-align: center;
+    overflow: hidden;
   }
 
   .content {
-    padding: 2%;
+    padding: 5px;
   }
 
   .project {
