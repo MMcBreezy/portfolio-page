@@ -120,6 +120,11 @@ p {
   .container {
     width: 100%;
   }
+
+  .content {
+    padding: 10px;
+    height: 120px;
+  }
 }
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -140,6 +145,8 @@ p {
 
   .content {
     padding: 2%;
+    padding: 10px;
+    height: 120px;
   }
 
   .project-section {
