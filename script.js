@@ -19,9 +19,9 @@ const bioView = `
 const projectsView = `
     <div class="project-section">
         <div class="container">
-            <div class="project word-guessr">Word Guessr</div>
-            <div class="project advisor-ai">Advisor_AI</div>
-            <div class="project braindose">BrainDose</div>
+        <a href="https://github.com/MMcBreezy/word-guessr-react" target="_blank" class="project word-guessr">Word Guessr</a>
+        <a href="https://github.com/MMcBreezy/AdvisorAI" target="_blank" class="project advisor-ai">Advisor_AI</a>
+        <a href="https://github.com/MMcBreezy/braindose" target="_blank" class="project braindose">BrainDose</a>
         </div>
     </div>
 `;
