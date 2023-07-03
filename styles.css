@@ -172,7 +172,7 @@ p {
   .project {
     margin: 2px;
     padding: 8px;
-    display: block;
+    display: inline-block;
     max-width: max-content;
   }
 
