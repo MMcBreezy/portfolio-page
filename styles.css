@@ -167,6 +167,9 @@ p {
 
   .project-section {
     overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .project {
