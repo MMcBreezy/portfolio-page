@@ -161,7 +161,8 @@ p {
   }
 
   .project {
-    width: 120px;
+    width: 180px;
+    margin: 6px;
   }
 
   p {
