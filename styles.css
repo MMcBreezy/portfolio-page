@@ -134,7 +134,8 @@ p {
   transform: translateY(2px);
 }
 
-.contact-section, p {
+.contact-section,
+p {
   margin: 4px;
 }
 
@@ -169,6 +170,10 @@ p {
     padding: 2%;
     padding: 10px;
     height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .project-section {
@@ -183,6 +188,7 @@ p {
     padding: 8px;
     display: inline-block;
     max-width: max-content;
+    height: 40px;
   }
 
   p {
