@@ -166,6 +166,10 @@ p {
     align-items: center;
   }
 
+  .project {
+    width: 120px;
+  }
+
   p {
     font-size: 0.8rem;
   }
