@@ -119,6 +119,9 @@ p {
   align-items: center;
   text-decoration: none;
   transition: transform 0.3s ease;
+  color: var(--base-color);
+  border-style: solid;
+  border-width: 1px;
 }
 
 .project:hover {
@@ -194,21 +197,6 @@ p {
     display: flex;
     justify-content: center;
   }
-}
-
-.word-guessr {
-  background: linear-gradient(rgb(142, 249, 213), rgb(30, 77, 100));
-  color: aliceblue;
-}
-
-.advisor-ai {
-  background: linear-gradient(rgb(142, 249, 249), rgb(95, 84, 175));
-  color: aliceblue;
-}
-
-.braindose {
-  background: linear-gradient(rgb(249, 142, 244), rgb(84, 146, 200));
-  color: aliceblue;
 }
 
 @keyframes fade-in {
