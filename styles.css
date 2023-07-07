@@ -120,6 +120,7 @@ p {
   text-decoration: none;
   transition: transform 0.3s ease;
   color: var(--base-color);
+  font-weight: bold;
   border-style: solid;
   border-width: 1px;
 }
@@ -127,12 +128,14 @@ p {
 .project:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
-  box-shadow: 15px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease;
 }
 
 .project:active {
-  transform: scale(0.95);
+  transform: translateY(2px);
+}
+
+.contact-section, p {
+  margin: 4px;
 }
 
 @media only screen and (max-width: 600px) {
