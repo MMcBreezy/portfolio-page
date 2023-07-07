@@ -19,6 +19,7 @@ const bioView = `
 const projectsView = `
     <div class="project-section">
         <div class="container">
+        <a href="https://github.com/MMcBreezy/portfolio-page" target="_blank" class="project">Portfolio Page</a>
         <a href="https://github.com/MMcBreezy/word-guessr-react" target="_blank" class="project">Word Guessr</a>
         <a href="https://github.com/MMcBreezy/AdvisorAI" target="_blank" class="project">Advisor_AI</a>
         <a href="https://github.com/MMcBreezy/braindose" target="_blank" class="project">BrainDose</a>

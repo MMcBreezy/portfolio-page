@@ -29,7 +29,7 @@ body {
 .content {
   background-color: beige;
   padding: 20px;
-  height: 10vh;
+  height: 12vh;
   overflow-y: auto;
   border-width: 2px;
   border-style: solid;
@@ -104,17 +104,9 @@ p {
   background-color: beige;
 }
 
-.project-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .project {
   margin: 2px;
-  width: 150px;
-  height: 40px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -141,7 +133,9 @@ p {
 
 @media only screen and (max-width: 600px) {
   .container {
-    width: 100%;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
   }
 
   .content {
@@ -152,7 +146,6 @@ p {
 
 @media only screen and (device-width: 375px) and (device-height: 812px) {
   .container {
-    flex-direction: column;
     width: 80%;
     overflow: hidden;
   }
@@ -177,17 +170,14 @@ p {
   }
 
   .project-section {
-    overflow: hidden;
-    flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .project {
-    margin: 2px;
     padding: 8px;
-    display: inline-block;
-    max-width: max-content;
+    width: 90px;
     height: 40px;
   }
 
