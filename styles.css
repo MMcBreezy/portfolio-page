@@ -39,14 +39,14 @@ body {
   text-align: center;
 }
 
-.content > div {
+/* .content > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 4px;
-}
+} */
 
 header {
   display: flex;
@@ -72,13 +72,10 @@ h1 {
   justify-content: center;
 }
 
-.bio-section {
-  padding: 5px;
-}
-
 p {
   font-size: 1rem;
   text-align: left;
+  margin: 6px;
 }
 
 .button {
@@ -108,8 +105,9 @@ p {
 }
 
 .project {
-  margin: 2px;
-  width: 180px;
+  margin: 6px;
+  width: 320px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,17 +128,65 @@ p {
   transform: translateY(2px);
 }
 
-.contact-section,
-p {
-  margin: 4px;
-}
-
 @media only screen and (max-height: 700px) {
   .content {
     padding: 10px;
-    height: 180px;
-    height: 24vh;
+    height: 14vh;
     width: 126vh;
+    min-width: 550px;
+  }
+
+  .project {
+    margin: 4px;
+    display: inline-flex;
+    height: 40px;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-height: 590px) {
+  p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .content {
+    padding: 10px;
+    height: 14vh;
+    width: 106vh;
+  }
+
+  .project {
+    margin: 2px;
+    display: inline-flex;
+    height: 30px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  p {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  .content {
+    padding: 10px;
+    height: 14vh;
+    width: 106vh;
+  }
+
+  .project {
+    margin: 2px;
+    display: inline-flex;
+    height: 30px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
