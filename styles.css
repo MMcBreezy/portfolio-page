@@ -46,8 +46,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   text-align: center;
+  margin: 4px;
 }
 
 header {
@@ -104,8 +104,14 @@ p {
   background-color: beige;
 }
 
+.project-section {
+  display: inline-flex;
+  justify-content: center;
+}
+
 .project {
   margin: 2px;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
