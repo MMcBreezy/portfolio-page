@@ -150,10 +150,11 @@ p {
   }
 }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-width: 375px) and (device-height: 812px) {
   .container {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    overflow: hidden;
   }
 
   .content > div {
@@ -167,9 +168,8 @@ p {
   }
 
   .content {
-    padding: 2%;
     padding: 2px;
-    height: 190px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
