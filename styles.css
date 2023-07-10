@@ -193,7 +193,8 @@ p {
 @media only screen and (device-width: 375px) and (device-height: 812px) {
   .content {
     padding: 2px;
-    height: 160px;
+    height: 200px;
+    width: 38vh;
     display: flex;
     justify-content: center;
     align-items: center;
