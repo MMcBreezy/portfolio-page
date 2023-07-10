@@ -19,16 +19,16 @@ const bioView = `
 const projectsView = `
     <div class="project-section">
         <div class="container">
-            <a href="https://github.com/MMcBreezy/portfolio-page" target="_blank" class="project" data-desc="This page!">
+            <a href="https://github.com/MMcBreezy/portfolio-page" target="_blank" id="portfolioPage" class="project">
                 Portfolio Page
             </a>
-            <a href="https://github.com/MMcBreezy/word-guessr-react" target="_blank" class="project" data-desc="Hangman-like React and Node project.">
+            <a href="https://github.com/MMcBreezy/word-guessr-react" target="_blank" id="wordGuessr" class="project">
                 Word Guessr
             </a>
-            <a href="https://github.com/MMcBreezy/AdvisorAI" target="_blank" class="project" data-desc="Uses OpenAI API to generate curriculum for what the user wants to learn.">
+            <a href="https://github.com/MMcBreezy/AdvisorAI" target="_blank" id="advisorAI" class="project">
                 Advisor_AI
             </a>
-            <a href="https://github.com/MMcBreezy/braindose" target="_blank" class="project" data-desc="Like flash-cards but with AI-generated tagging system.">
+            <a href="https://github.com/MMcBreezy/braindose" target="_blank" id="brainDose" class="project">
                 BrainDose
             </a>
         </div>
@@ -37,11 +37,11 @@ const projectsView = `
 
 const contactView = `
     <div class="contact-section">
-        <p><strong>Email:</strong> michaelmcbride85@gmail.com</p>
+        <p><strong>michaelmcbride85@gmail.com</strong></p>
     </div>
 `;
 
-const switchView = (btn, view) => {
+function switchView(btn, view) {
   btn.addEventListener("click", () => {
     content.innerHTML = view;
     [bioBtn, projectsBtn, contactBtn].forEach((button) =>
@@ -49,7 +49,7 @@ const switchView = (btn, view) => {
     );
     btn.classList.add("active");
   });
-};
+}
 
 switchView(bioBtn, bioView);
 switchView(projectsBtn, projectsView);
