@@ -19,10 +19,18 @@ const bioView = `
 const projectsView = `
     <div class="project-section">
         <div class="container">
-        <a href="https://github.com/MMcBreezy/portfolio-page" target="_blank" class="project">Portfolio Page</a>
-        <a href="https://github.com/MMcBreezy/word-guessr-react" target="_blank" class="project">Word Guessr</a>
-        <a href="https://github.com/MMcBreezy/AdvisorAI" target="_blank" class="project">Advisor_AI</a>
-        <a href="https://github.com/MMcBreezy/braindose" target="_blank" class="project">BrainDose</a>
+            <a href="https://github.com/MMcBreezy/portfolio-page" target="_blank" class="project" data-desc="This page!">
+                Portfolio Page
+            </a>
+            <a href="https://github.com/MMcBreezy/word-guessr-react" target="_blank" class="project" data-desc="Hangman-like React and Node project.">
+                Word Guessr
+            </a>
+            <a href="https://github.com/MMcBreezy/AdvisorAI" target="_blank" class="project" data-desc="Uses OpenAI API to generate curriculum for what the user wants to learn.">
+                Advisor_AI
+            </a>
+            <a href="https://github.com/MMcBreezy/braindose" target="_blank" class="project" data-desc="Like flash-cards but with AI-generated tagging system.">
+                BrainDose
+            </a>
         </div>
     </div>
 `;
