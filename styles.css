@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 1% 0;
+  margin: 0;
   background: linear-gradient(to bottom, rgb(39, 97, 156), rgb(151, 247, 239));
   position: relative;
   font-family: var(--font-family);
@@ -20,19 +20,22 @@ body {
 }
 
 .container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .content {
   background-color: beige;
   padding: 5%;
-  height: 24vh;
+  height: 22vh;
   width: 46vh;
   overflow: hidden;
   border-width: 2px;
   border-style: solid;
   border-color: var(--base-color);
-  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,9 +109,9 @@ p {
 
 .project {
   position: relative;
-  margin: 6px;
+  margin: 2px;
   width: 320px;
-  height: 40px;
+  height: 34px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +122,7 @@ p {
   border-style: solid;
   border-width: 1px;
 }
-
+/* 
 .project:hover:after {
   content: attr(data-desc);
   position: absolute;
@@ -133,7 +136,7 @@ p {
   font-size: 0.8rem;
   border-radius: 4px;
   text-align: center;
-}
+} */
 
 .project:hover {
   transform: scale(1.05);
@@ -143,7 +146,6 @@ p {
 .project:active {
   transform: translateY(2px);
 }
-
 
 @media only screen and (max-height: 628px) {
   p {
@@ -234,5 +236,49 @@ p {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.toast {
+  visibility: hidden;
+  max-width: 90%;
+  min-width: 250px;
+  background-color: beige;
+  color: var(--base-color);
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--base-color);
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%); /* center the toast */
+  transition: opacity 0.5s, transform 0.5s ease;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.toast-btn {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Animation to fade the toast in */
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
   }
 }
