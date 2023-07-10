@@ -30,7 +30,6 @@ const projectsView = `
 const contactView = `
     <div class="contact-section">
         <p><strong>Email:</strong> michaelmcbride85@gmail.com</p>
-        <p><b>Phone:</b> 828.817.9493</p>
     </div>
 `;
 

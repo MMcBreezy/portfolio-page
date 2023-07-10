@@ -16,7 +16,7 @@ body {
   font-size: var(--base-font-size);
   color: var(--base-color);
   transition: all 0.3s ease;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
   padding: 5%;
   height: 24vh;
   width: 46vh;
-  overflow-y: auto;
+  overflow: hidden;
   border-width: 2px;
   border-style: solid;
   border-color: var(--base-color);
