@@ -16,7 +16,7 @@ body {
   font-size: var(--base-font-size);
   color: var(--base-color);
   transition: all 0.3s ease;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container {
@@ -205,11 +205,11 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-y: hidden;
   }
 
   .project {
-    width: 290px;
+    width: 250px;
     margin: 6px;
     height: 30px;
   }
