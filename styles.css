@@ -144,25 +144,8 @@ p {
   transform: translateY(2px);
 }
 
-@media only screen and (max-height: 700px) {
-  .content {
-    padding: 10px;
-    height: 14vh;
-    width: 126vh;
-    /* min-width: 550px; */
-  }
 
-  .project {
-    margin: 4px;
-    display: inline-flex;
-    height: 40px;
-    width: 170px;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-height: 590px) {
+@media only screen and (max-height: 628px) {
   p {
     font-size: 0.8rem;
     text-align: left;
