@@ -10,7 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 1% 0;
-  background: linear-gradient(to bottom, rgb(77, 157, 237), rgb(162, 218, 246));
+  background: linear-gradient(to bottom, rgb(39, 97, 156), rgb(151, 247, 239));
   position: relative;
   font-family: var(--font-family);
   font-size: var(--base-font-size);
