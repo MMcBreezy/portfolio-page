@@ -56,7 +56,6 @@ switchView(projectsBtn, projectsView);
 switchView(contactBtn, contactView);
 
 window.onload = function () {
-    bioBtn.classList.add("active");
-    content.innerHTML = bioView;
-  };
-  
+  bioBtn.classList.add("active");
+  content.innerHTML = bioView;
+};

@@ -87,6 +87,7 @@ p {
   font-size: 1em;
   font-weight: bold;
   width: 80px;
+  cursor: pointer;
 }
 
 .view-buttons {
