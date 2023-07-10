@@ -205,11 +205,13 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 
   .project {
     width: 290px;
     margin: 6px;
+    height: 30px;
   }
 
   p {
