@@ -127,7 +127,7 @@ p {
   transform: translateY(2px);
 }
 
-@media only screen and (max-height: 674px) {
+/* @media only screen and (max-height: 674px) {
   p {
     font-size: 0.8rem;
     text-align: left;
@@ -151,7 +151,7 @@ p {
   .project-section {
     flex-wrap: nowrap;
   }
-}
+} */
 
 /* @media only screen and (max-height: 675px) {
   p {
