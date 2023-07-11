@@ -197,6 +197,7 @@ p {
     align-items: center;
     overflow-y: hidden;
     height: 200px;
+    flex-wrap: wrap;
   }
 
   .project {
