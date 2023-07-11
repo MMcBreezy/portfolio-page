@@ -24,14 +24,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .content {
   background-color: beige;
   padding: 5%;
-  height: 22vh;
-  width: 46vh;
+  height: 150px;
+  width: 370px;
   overflow: hidden;
   border-width: 2px;
   border-style: solid;
