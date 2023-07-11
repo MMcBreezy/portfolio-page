@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
+  margin: 5px;
   background: linear-gradient(to bottom, rgb(39, 97, 156), rgb(151, 247, 239));
   position: relative;
   font-family: var(--font-family);
@@ -41,15 +41,6 @@ body {
   align-items: center;
   text-align: center;
 }
-
-/* .content > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 4px;
-} */
 
 header {
   display: flex;
@@ -105,6 +96,10 @@ p {
 .project-section {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
+  height: 175px;
+  flex-wrap: wrap;
+  margin: 2px;
 }
 
 .project {
@@ -122,21 +117,6 @@ p {
   border-style: solid;
   border-width: 1px;
 }
-/* 
-.project:hover:after {
-  content: attr(data-desc);
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 320px;
-  padding: 4px 8px;
-  color: #fff;
-  background-color: #333;
-  font-size: 0.8rem;
-  border-radius: 4px;
-  text-align: center;
-} */
 
 .project:hover {
   transform: scale(1.05);
@@ -147,7 +127,7 @@ p {
   transform: translateY(2px);
 }
 
-@media only screen and (max-height: 628px) {
+@media only screen and (max-height: 674px) {
   p {
     font-size: 0.8rem;
     text-align: left;
@@ -162,23 +142,27 @@ p {
   .project {
     margin: 2px;
     display: inline-flex;
-    height: 30px;
+    height: 90px;
     width: 120px;
     justify-content: center;
     align-items: center;
   }
+
+  .project-section {
+    flex-wrap: nowrap;
+  }
 }
 
-@media only screen and (max-height: 450px) {
+@media only screen and (max-height: 675px) {
   p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: left;
   }
 
   .content {
     padding: 10px;
     height: 14vh;
-    width: 106vh;
+    width: 500px;
   }
 
   .project {
@@ -192,6 +176,10 @@ p {
 }
 
 @media only screen and (max-width: 375px) and (max-height: 812px) {
+  .content-section {
+    align-items: center;
+  }
+  
   .content {
     padding: 3px 18px;
     height: 200px;
@@ -208,6 +196,7 @@ p {
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
+    height: 200px;
   }
 
   .project {
@@ -236,49 +225,5 @@ p {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-.toast {
-  visibility: hidden;
-  max-width: 90%;
-  min-width: 250px;
-  background-color: beige;
-  color: var(--base-color);
-  text-align: center;
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--base-color);
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%); /* center the toast */
-  transition: opacity 0.5s, transform 0.5s ease;
-}
-
-.toast.show {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
-.toast-btn {
-  display: block;
-  margin-top: 10px;
-}
-
-/* Animation to fade the toast in */
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
   }
 }
