@@ -142,9 +142,12 @@ p {
 
   .button {
     margin: -1 1px;
+    padding: 5px auto 5px auto;
     font-size: 1.1em;
     width: 95px;
     height: 35px;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
@@ -159,26 +162,15 @@ p {
 
   .project {
     margin: 6px;
+    height: 38;
   }
 
   p {
     font-size: 1.08rem;
   }
-
-  .button {
-    font-size: 1rem;
-    padding: 5px auto 5px auto;
-    display: flex;
-    justify-content: center;
-  }
 }
 
 @media only screen and (orientation: landscape) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-
   .button {
     margin: -1 1px;
     font-size: 1.1em;
