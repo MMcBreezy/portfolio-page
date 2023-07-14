@@ -133,11 +133,11 @@ p {
   
   .content {
     padding: 3px 18px;
-    height: 200px;
+    height: 220px;
     width: 38vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     align-content: space-around;
     text-align: center;
   }
