@@ -127,17 +127,22 @@ p {
 }
 
 @media only screen and (max-width: 375px) and (max-height: 812px) {
-  .content-section {
-    align-items: center;
+  .body {
+    overflow: hidden;
   }
   
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
   .content {
-    padding: 3px 18px;
-    height: 220px;
+    padding: 3px 12px;
+    height: 230px;
     width: 38vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     align-content: space-around;
     text-align: center;
   }
