@@ -137,8 +137,11 @@ p {
   }
 
   .button {
+    margin: -1 1px;
     font-size: 1.1em;
-    width: 110px;
+    width: 105px;
+    height: 35px;
+    align-items: center;
   }
 
   .project-section {
@@ -163,6 +166,16 @@ p {
     padding: 5px auto 5px auto;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-height: 375px) and (max-width: 812px) {
+  .button {
+    margin: -1 1px;
+    font-size: 1.1em;
+    width: 105px;
+    height: 35px;
+    align-items: center;
   }
 }
 
