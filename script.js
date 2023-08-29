@@ -10,7 +10,8 @@ const bioView = `
             Hi, my name is Mike! I love technology and learning about new ways
             to elevate the human experience. When I'm not diving into programming,
             I can be found spending time with my family, composing and producing
-            music, playing piano or tinkering with electronics. Now only $19.95 for three months!
+            music, playing piano or tinkering with electronics. You can checkout
+            my projects on the projects tab above!
         </p>
     </div>
 `;
